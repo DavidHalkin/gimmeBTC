@@ -1,0 +1,21 @@
+{
+  "name": "gimmeBTC",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Halkin David northfire@mail.ru"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DavidHalkin/gimmeBTC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.2"
+  }
+}
