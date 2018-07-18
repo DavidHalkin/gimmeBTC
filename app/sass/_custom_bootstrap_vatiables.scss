@@ -1,16 +1,17 @@
 $theme-colors: (
-   "light_orange": #ffc400,
-   "dark_orange": #ffcd26,
-   "dark_gray": #ccc7c7
+   "custom_green": #6eb279,
+   "custom_red": #cf6a6e,
+   "custom_gray": #343537,
+   "light_gray": #ccd2dc
 );
-$font-size-base:              1.12rem; // Assumes the browser default, typically `16px`
+$font-size-base:              0.75rem; // Assumes the browser default, typically `12px`
 $btn-focus-width:0;
-$font-family-base: 'Akrobat', sans-serif;
+$font-family-base: 'HelveticaNeueCyr';
 
 $input-focus-box-shadow: none;
 $body-color: #000;
 $btn-border-width:      2px;
-$btn-border-radius:          0;
+$btn-border-radius:          5px;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

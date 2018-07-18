@@ -1,0 +1,149 @@
+.footer{
+	flex: 0 0 auto;
+	border-top: 4px solid #26bcf1;
+	padding: 28px 0;
+}
+.footer_logo{
+	color: #f8f8f8;
+	margin-right: 20px;
+	i{
+		font-weight: bold;
+		font-style: normal;
+		color: #26bcf1;
+	}
+	&:hover{
+		text-decoration: none;
+		color: #f8f8f8;
+	}
+}
+.logo_block{
+	margin-right: auto;
+	.copy{
+		color: #909ba1;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 44px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform:translateY(-50%); 
+			left: 0;
+			width: 1px;
+			height: 25px;
+			background: #46494c;
+		}
+	}
+}
+.footer_nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 14px;
+	li{
+		position: relative;
+		padding-left: 20px;
+		padding-right: 30px;
+		&:last-child{
+			padding-right: 0;
+		}
+		&:before{
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #909ba1;
+			top: 50%;
+			transform:translateY(-50%); 
+			left: 0;
+			position: absolute;
+		}
+		&.active{
+			a{
+				text-decoration: underline;
+				color: #26bcf1;
+			}
+			&:before{
+				background: #26bcf1;
+			}
+		}
+		a{
+			color: #909ba1;
+			&:hover{
+				color: #26bcf1;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.etc_inf{
+	margin: 0;
+	padding: 0 0 0 40px;
+	list-style: none;
+	font-size: 14px;
+	li{
+		padding: 6px 0;
+	}
+	i,span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	span{
+		padding-left: 10px;
+	}
+	a{
+		color: #fff;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.lang{
+	text-transform: uppercase;
+	.btn{
+		background: none;
+		border: 0;
+		padding: 0 0 0 18px;
+		&:after{
+			content: none;
+		}
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform:translateY(-50%); 
+			border-top: 6px solid #f8f8f8;
+			border-right: 6px solid transparent;
+			border-bottom: 0;
+			border-left: 6px solid transparent;
+		}
+	}
+	.btn:not(:disabled):not(.disabled):active,
+	.btn:not(:disabled):not(.disabled).active,
+	.show > .btn.dropdown-toggle{
+		background: none !important;
+		border: 0;
+	}
+	.dropdown-menu{
+		min-width: 38px;
+		padding: 0;
+		border-radius: 3px;
+		a{
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+			&:first-of-type{
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+			}
+			&:last-of-type{
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+		}
+	}
+}

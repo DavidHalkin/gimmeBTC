@@ -1,0 +1,36 @@
+.container_fluid_custom{
+	max-width: 1330px;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.w1{
+	flex: 1 0 auto;
+	padding-bottom: 30px;
+}
+.nano{
+	&.has-scrollbar{
+		.message_row{
+			width: calc(100% - 10px);
+			.ico {
+				right: 12px;
+			}
+		}
+
+	}
+	> .nano-pane{
+		width: 4px;
+		background: none;
+		right: 3px;
+		> .nano-slider{
+			margin: 0;
+			background: #ccd2dc;
+		}
+	}
+}
