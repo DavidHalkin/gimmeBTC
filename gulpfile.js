@@ -116,7 +116,7 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/jquery/dist/jquery.min.js', 
 		'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
-		'bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js'
+		'bower_components/simplebar/dist/simplebar.js'
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
@@ -127,7 +127,7 @@ gulp.task('scripts', function() {
 //библиотеки css
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'bower_components/nanoscroller/bin/css/nanoscroller.css'
+		'bower_components/simplebar/dist/simplebar.css'
 		// 'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
 		// 'bower_components/font-awesome/css/font-awesome.min.css'
 		])

@@ -1,2 +1,11 @@
-.nano{position:relative;width:100%;height:100%;overflow:hidden}.nano>.nano-content{position:absolute;overflow:scroll;overflow-x:hidden;top:0;right:0;bottom:0;left:0}.nano>.nano-content:focus{outline:thin dotted}.nano>.nano-content::-webkit-scrollbar{display:none}.has-scrollbar>.nano-content::-webkit-scrollbar{display:block}.nano>.nano-pane{background:rgba(0,0,0,.25);position:absolute;width:10px;right:0;top:0;bottom:0;visibility:hidden\9;opacity:.01;transition:.2s;border-radius:5px}.nano>.nano-pane>.nano-slider{background:#444;background:rgba(0,0,0,.5);position:relative;margin:0 1px;border-radius:3px}.nano-pane.active,.nano-pane.flashed,.nano:hover>.nano-pane{visibility:visible\9;opacity:.99}
+/*!
+ * 
+ *         SimpleBar.js - v2.6.1
+ *         Scrollbars, simpler.
+ *         https://grsmto.github.io/simplebar/
+ *         
+ *         Made by Adrien Grsmto from a fork by Jonathan Nicol
+ *         Under MIT License
+ *       
+ */[data-simplebar]{position:relative;z-index:0;overflow:hidden!important;max-height:inherit;-webkit-overflow-scrolling:touch}[data-simplebar=init]{display:-ms-flexbox;display:flex}.simplebar-scroll-content{overflow-x:hidden!important;overflow-y:scroll;min-width:100%!important;max-height:inherit!important;box-sizing:content-box!important}.simplebar-content{overflow-y:hidden!important;overflow-x:scroll;box-sizing:border-box!important;min-height:100%!important}.simplebar-track{z-index:1;position:absolute;right:0;bottom:0;width:11px}.simplebar-scrollbar{position:absolute;right:2px;width:7px;min-height:10px}.simplebar-scrollbar:before{position:absolute;content:"";background:#000;border-radius:7px;left:0;right:0;opacity:0;transition:opacity .2s linear}.simplebar-track .simplebar-scrollbar.visible:before,.simplebar-track:hover .simplebar-scrollbar:before{opacity:.5;transition:opacity 0 linear}.simplebar-track.vertical{top:0}.simplebar-track.vertical .simplebar-scrollbar:before{top:2px;bottom:2px}.simplebar-track.horizontal{left:0;width:auto;height:11px}.simplebar-track.horizontal .simplebar-scrollbar:before{height:100%;left:2px;right:2px}.horizontal.simplebar-track .simplebar-scrollbar{right:auto;top:2px;height:7px;min-height:0;min-width:10px;width:auto}
 /*# sourceMappingURL=libs.min.css.map */

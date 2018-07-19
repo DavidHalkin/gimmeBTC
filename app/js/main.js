@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   $(".nano").nanoScroller();
+   // $(".nano").nanoScroller();
    // add overlay
     $('body').append('<span class="menu_overlay"></span>');
    $(".dell_js").click(function(){
@@ -24,5 +24,11 @@ $(document).ready(function(){
       $(".menu_overlay").click(function(){
         $(".bar_menu").toggleClass("opened");
         $(".menu_overlay").toggleClass("opened");
+    });
+      // show etc forms
+    $(".show_link_js").click(function(){
+        $(this).parent().addClass("opened");
+        $(this).parent().next().slideDown("fast");
+        return false;
     });
 });

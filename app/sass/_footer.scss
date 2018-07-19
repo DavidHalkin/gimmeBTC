@@ -147,3 +147,40 @@
 		}
 	}
 }
+@include media-breakpoint-down(lg) {
+	.footer{
+		padding: 15px 0;
+		font-size: 14px;
+		.footer_nav{
+			order:1;
+			justify-content:center;
+			li{
+				padding: 0 10px;
+				&:before{
+					content: none;
+				}
+			}
+		}
+		.etc_inf{
+			order:2;
+			padding:15px 0;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content:center;
+			li{
+				padding: 0 10px;
+			}
+		}
+		.logo_block{
+			order:3;
+			justify-content:center;
+			.copy{
+				padding-right: 20px;
+			}
+		}
+		.footer_nav,.etc_inf,.logo_block{
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}
