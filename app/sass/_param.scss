@@ -14,6 +14,9 @@ body {
 .w1{
 	flex: 1 0 auto;
 	padding-bottom: 30px;
+	@include media-breakpoint-down(md){
+		padding-top: 80px;
+	}
 }
 .pseudo_select{
 	.btn:not(:disabled):not(.disabled):active,

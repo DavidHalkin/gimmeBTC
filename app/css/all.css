@@ -1077,6 +1077,8 @@ html, body { height: 100%; background: #f8f8f8; }
 
 .w1 { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; padding-bottom: 30px; }
 
+@media (max-width: 991.98px) { .w1 { padding-top: 80px; } }
+
 .pseudo_select .btn:not(:disabled):not(.disabled):active, .pseudo_select .btn:not(:disabled):not(.disabled).active, .pseudo_select .show > .btn.dropdown-toggle { background: none !important; border: 1px solid #ededed; }
 
 .pseudo_select .show > .btn.dropdown-toggle .ico { -webkit-transform: translateY(-50%) rotate(-90deg); -ms-transform: translateY(-50%) rotate(-90deg); transform: translateY(-50%) rotate(-90deg); }
@@ -1192,6 +1194,8 @@ html, body { height: 100%; background: #f8f8f8; }
 .header a, .header a * { -webkit-transition: color 0.3s ease ,  background 0.3s ease; -o-transition: color 0.3s ease ,  background 0.3s ease; transition: color 0.3s ease ,  background 0.3s ease; }
 
 .header a:hover, .header a *:hover { -webkit-transition: color 0.5s,  ease background 0.5s ease; -o-transition: color 0.5s,  ease background 0.5s ease; transition: color 0.5s,  ease background 0.5s ease; }
+
+@media (max-width: 991.98px) { .header { position: fixed; top: 0; left: 0; width: 100%; z-index: 300; } }
 
 .header .parts_btn { padding: 0 20px; }
 
@@ -1382,7 +1386,7 @@ html, body { height: 100%; background: #f8f8f8; }
   .message_drop .message_row h4 { font-size: 18px; }
   .message_drop .message_row p, .message_drop .message_row .read_more, .message_drop .message_row .inf { font-size: 14px; line-height: 17px; } }
 
-.main { padding-top: 30px; }
+.main { padding: 30px 10px 0; max-width: 1140px; margin: 0 auto; }
 
 .box_item_wrap { padding: 0 30px; }
 
