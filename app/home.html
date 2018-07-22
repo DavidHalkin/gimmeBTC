@@ -152,21 +152,21 @@
 				</div>
 				<div class="main">
 					<div class="row justify-content-center no-gutters">
-						<div class="col-lg-12 col-xl-10">
+						<div class="col-12 col-xl-10">
 							<div class="box_item">
 								<div class="box_item_title d-flex align-items-center blue_bd">
 									<h2>Обмен валют</h2>
-									<div class="alert_message ml-auto">
+									<div class="alert_message ml-auto d-none d-md-block">
 										<span class="text-custom_red">Введите сумму в раздел “Отдаете”</span>
 									</div>
 								</div>
 								<div class="box_item_content">
 									<div class="box_item_wrap">
-										<div class="container">
+										<div class="container-fluid">
 											<div class="row  justify-content-center">
-												<div class="col-md-11">
+												<div class="col-12 col-md-11 ">
 													<div class="row">
-														<div class="col func_block">
+														<div class="col-12 col-md func_block">
 															<h3 class="text-custom_red">Отдаете</h3>
 															<div class="pseudo_select">
 																<div class="dropdown">
@@ -213,7 +213,7 @@
 															</div>
 															<div class="info_col">
 																<div class="form-group">
-																	<label for="f1">Сумма:</label>
+																	<label for="f1" class="d-none d-lg-block">Сумма:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f1" placeholder="0.11">
 																		<small class="help_text">минимум: 0.01 BTC</small>
@@ -226,7 +226,7 @@
 																<i class="ico icon-arrows_down_up"></i>
 															</a>
 														</div>
-														<div class="col func_block">
+														<div class="col-12 col-md func_block">
 															<h3 class="text-custom_green">Получаете</h3>
 															<div class="pseudo_select">
 																<div class="dropdown">
@@ -273,7 +273,7 @@
 															</div>
 															<div class="info_col">
 																<div class="form-group">
-																	<label for="f11">Сумма:</label>
+																	<label for="f1" class="d-none d-lg-block">Сумма:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f11" placeholder="0.11">
 																		<small class="help_text">с учетом 5% комиссии</small>
@@ -294,26 +294,26 @@
 													<div class="show_block show_block_js">
 														<div class="row no-gutters">
 															<div class="col-md-6 mr-0 mr-md-auto">
-																<div class="form-group form-group_custom">
-																	<label for="f111">ФИО:</label>
+																<div class="form-group form-group_custom ">
+																	<label for="f111" class="d-none d-lg-block">ФИО:</label>
 																	<div class="r_part">
-																		<input type="text" class="form-control" id="f111" placeholder="Крузерштейн Александр Владимирович">
+																		<input type="text" class="form-control is-invalid" id="f111" placeholder="Крузерштейн Александр Владимирович">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="f2">BitCoin адрес:</label>
+																	<label for="f2" class="d-none d-lg-block">BitCoin адрес:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f2" placeholder="34eiH5tggA6FDAXH7aSunjDZJdafJauJVT">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="f3">Телефон:</label>
+																	<label for="f3" class="d-none d-lg-block">Телефон:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f3" placeholder="+38 (050) 123-45-67">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="f4">E-mail:</label>
+																	<label for="f4" class="d-none d-lg-block">E-mail:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f4" placeholder="usermail@gmail.com">
 																	</div>
@@ -321,7 +321,7 @@
 															</div>
 															<div class="col-md-5 text-right">
 																<div class="form-group form-group_custom no_fixed_label">
-																	<label for="f5">BitCoin адрес:</label>
+																	<label for="f5" class="d-none d-lg-block">BitCoin адрес:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="f5" placeholder="34eiH5tggA6FDAXH7aSunjDZJdafJauJVT">
 																	</div>
@@ -331,6 +331,7 @@
 																	<li><span>Отдаете:</span> <b>0.11 BTC</b></li>
 																	<li><span>Получаете: </span> <b>675.41 USD</b></li>
 																</ul>
+																<span class="error_massage">Введите ФИО</span>
 																<a href="#" class="btn btn_big btn-custom_green text-white btn-block">
 																	<span>Обменять</span>
 																	<i class="ico icon-refresh_1"></i>
@@ -347,7 +348,7 @@
 							<div class="box_item">
 								<div class="box_item_title d-flex align-items-center blue_bd">
 									<h2>Склад</h2>
-									<div class="alert_message ml-auto">
+									<div class="alert_message ml-auto d-none d-md-block">
 										<span class="text-custom_red">Введите сумму в раздел “Отдаете”</span>
 									</div>
 								</div>
@@ -364,11 +365,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="container">
+										<div class="container-fluid">
 											<div class="row  justify-content-center">
 												<div class="col-md-11">
 													<div class="row">
-														<div class="col func_block">
+														<div class="col-12 col-md func_block">
 															<h3 class="text-custom_red">Отдаете</h3>
 															<div class="pseudo_select">
 																<div class="dropdown">
@@ -385,7 +386,7 @@
 															</div>
 															<div class="info_col">
 																<div class="form-group">
-																	<label for="a1">Сумма:</label>
+																	<label for="f1" class="d-none d-lg-block">Сумма:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="a1" placeholder="0.11">
 																		<small class="help_text">минимум: 0.01 BTC</small>
@@ -398,7 +399,7 @@
 																<i class="ico icon-arrows_down_up"></i>
 															</a>
 														</div>
-														<div class="col func_block">
+														<div class="col-12 col-md func_block">
 															<h3 class="text-custom_green">Получаете</h3>
 															<div class="pseudo_select">
 																<div class="dropdown">
@@ -415,7 +416,7 @@
 															</div>
 															<div class="info_col">
 																<div class="form-group">
-																	<label for="a11">Сумма:</label>
+																	<label for="f1" class="d-none d-lg-block">Сумма:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="a11" placeholder="0.11">
 																		<small class="help_text">с учетом 5% комиссии</small>
@@ -437,25 +438,25 @@
 														<div class="row no-gutters">
 															<div class="col-md-6 mr-0 mr-md-auto">
 																<div class="form-group form-group_custom">
-																	<label for="q1">ФИО:</label>
+																	<label for="q1"  class="d-none d-lg-block">ФИО:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="q1" placeholder="Крузерштейн Александр Владимирович">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="q11">BitCoin адрес:</label>
+																	<label for="q11"  class="d-none d-lg-block">BitCoin адрес:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="q11" placeholder="34eiH5tggA6FDAXH7aSunjDZJdafJauJVT">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="q111">Телефон:</label>
+																	<label for="q111"  class="d-none d-lg-block">Телефон:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="q111" placeholder="+38 (050) 123-45-67">
 																	</div>
 																</div>
 																<div class="form-group form-group_custom">
-																	<label for="q12">E-mail:</label>
+																	<label for="q12"  class="d-none d-lg-block">E-mail:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="q12" placeholder="usermail@gmail.com">
 																	</div>
@@ -463,7 +464,7 @@
 															</div>
 															<div class="col-md-5 text-right">
 																<div class="form-group form-group_custom no_fixed_label">
-																	<label for="w1">BitCoin адрес:</label>
+																	<label for="w1"  class="d-none d-lg-block">BitCoin адрес:</label>
 																	<div class="r_part">
 																		<input type="text" class="form-control" id="w1" placeholder="34eiH5tggA6FDAXH7aSunjDZJdafJauJVT">
 																	</div>
