@@ -73,10 +73,76 @@
 										<a href="#"><i class="ico icon-refresh_1 "></i> <span>Мои обмены</span></a>
 									</li>
 								</ul>
-								<div class="log_in_buttons">
-									<a href="#" class="btn btn-custom_blue">Вход</a>
-									<a href="#" class="btn btn-custom_red2">Регистрация</a>
+								<div class="parts_btn d-flex order-12 order-lg-1">
+									<a href="#" class="btn btn-outline-custom_green">
+										<i class=" ico icon-card_1_add"></i>
+										<span class="d-lg-none d-xl-inline">Пополнить</span>
+									</a>
+									<a href="#" class="btn btn-outline-custom_red">
+										<i class="ico icon-card_1_minus "></i>
+										<span class="d-lg-none d-xl-inline">Вывести</span>
+									</a>
 								</div>
+								<div class="balance_block d-flex align-items-center order-lg-2">
+									<span>Общий баланс:</span>
+									<a href="#" class="d-md-block d-lg-none"><i class="ico icon-door_2"></i></a>
+									<a href="#" class="d-md-block d-lg-none"><i class="ico icon-gear_2"></i></a>
+									<ul class="balance_list">
+										<li class="d-flex">
+											<em>BTC</em>
+											<strong class="text-custom_green">0.12345678</strong>
+										</li>
+										<li class="d-flex">
+											<em>USD</em>
+											<strong class="text-custom_green">1234.5678</strong>
+										</li>
+									</ul>
+								</div>
+								<ul class="etc_func align-items-center order-md-0 order-lg-3 d-none d-lg-flex">
+									<li>
+										<div class="message_box">
+											<a href="#" class="message_link message_link_js"> <i class="ico icon-notification"></i> <em class="number">4</em></a>
+											<div class="message_drop message_drop_js">
+												<div class="message_header">
+													<h3><span>4</span> <span>новых уведомления</span></h3>
+													<a href="#" class="ico icon-mini_x_2 message_drop_close_js"></a>
+												</div>
+												<div class="message_content"   data-simplebar>
+													<div class="message_row message_row_js">
+														<a href="#" class="ico icon-mini_x_2 dell_js"></a>
+														<h4>Заголовок 1</h4>
+														<p>Значимость этих проблем настолько очевидна,</p>
+														<a href="#" class="read_more">Читать далее</a>
+														<span class="inf"><em>14:08	</em> <b>03.07.2018</b></span>
+													</div>
+													<div class="message_row message_row_js">
+														<a href="#" class="ico icon-mini_x_2 dell_js"></a>
+														<h4>Заголовок 1</h4>
+														<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный...</p>
+														<a href="#" class="read_more">Читать далее</a>
+														<span class="inf"><em>14:08	</em> <b>03.07.2018</b></span>
+													</div>
+													<div class="message_row message_row_js">
+														<a href="#" class="ico icon-mini_x_2 dell_js"></a>
+														<h4>Заголовок 1</h4>
+														<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный...</p>
+														<a href="#" class="read_more">Читать далее</a>
+														<span class="inf"><em>14:08	</em> <b>03.07.2018</b></span>
+													</div>
+													<div class="message_row message_row_js">
+														<a href="#" class="ico icon-mini_x_2 dell_js"></a>
+														<h4>Заголовок last</h4>
+														<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный...</p>
+														<a href="#" class="read_more">Читать далее</a>
+														<span class="inf"><em>14:08	</em> <b>03.07.2018</b></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li><a href="#"><i class="ico icon-gear_2"></i></a></li>
+									<li><a href="#" class="log_out"><i class="ico icon-door_2"></i> <span>Выход</span></a></li>
+								</ul>
 							</div>
 							<span class="btn_mob_js btn_mob d-lg-none">
 								<i class="ico  icon-menu_1 "></i>
@@ -86,70 +152,18 @@
 				</div>
 				<div class="main">
 					<div class="row justify-content-center no-gutters">
-						<div class="col-12 col-sm-8 col-md-7 col-lg-5">
+						<div class="col-12 col-xl-10">
 							<div class="box_item">
 								<div class="box_item_title d-flex align-items-center blue_bd">
-									<h1>Регистрация</h1>
+									<h1>Настройки профиля</h1>
 								</div>
 								<div class="box_item_content">
-									<div class="form_block">
-										<form action="#">
-											<div class="form-group">
-												<input class="form-control"  placeholder="E-mail:" type="text">
-											</div>
-											<div class="form-group">
-												<input class="form-control"  placeholder="Пароль:" type="password">
-											</div>
-											<div class="form-group">
-												<input class="form-control"  placeholder="Пароль еще раз:" type="password">
-											</div>
-											<div class="form-group">
-												<img src="images/cap.png" alt="" style="width: 100%; display: block; height: auto;">
-											</div>
-											<div class="form-group custom_checkbox">
-												<input type="checkbox" id="test2" checked="checked" />
-												<label for="test2">Я согласен с <a href="#">условиями соглашения</a></label>
-											</div>
-											<span class="error_massage">Введите ФИО</span>
-											<div class="form-group">
-												<button class="btn btn-outline-custom_green btn-block">Зарегистрироваться</button>
-											</div>
-											<p class="text-center">Уже зарегистрированы? <a href="#">Войти</a></p>
-										</form>
-									</div>
-								</div>
-							</div>
-							<div class="box_item">
-								<div class="box_item_title d-flex align-items-center blue_bd">
-									<h1>Вход</h1>
-								</div>
-								<div class="box_item_content">
-									<div class="form_block">
-										<form action="#">
-											<div class="form-group">
-												<input class="form-control"  placeholder="E-mail:" type="text">
-											</div>
-											<div class="form-group">
-												<input class="form-control"  placeholder="Пароль:" type="password">
-											</div>
-											<div class="form-group text-right forgot_part">
-												<a href="#">Забыли пароль?</a>
-											</div>
-											<div class="form-group">
-												<img src="images/cap.png" alt="" style="width: 100%; display: block; height: auto;">
-											</div>
-											<!-- <span class="error_massage">Введите ФИО</span> -->
-											<div class="form-group">
-												<button class="btn btn-outline-custom_green btn-block">Войти</button>
-											</div>
-											<p class="text-center">У Вас еще нет аккаунта?  <a href="#">Зарегистрироваться</a></p>
-										</form>
-									</div>
+									
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 			<div class="footer bg-custom_gray">
 				<div class="container-fluid container_fluid_custom">

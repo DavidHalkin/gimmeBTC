@@ -133,10 +133,24 @@ body {
 	font-style: italic;
 	padding-top: 8px;
 	font-size: 12px;
+	i{
+		font-style: italic;
+	}
 	@include media-breakpoint-down(sm){
 		font-size: 14px;
 	}
+	+ span.help_text{
+		padding-top: 0;
+	}
 }
+span.help_text{
+	font-style: normal;
+	display: block;
+	i{
+		font-style: normal;
+	}
+}
+
 .btn_big{
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -326,4 +340,92 @@ body {
 	font-size: 14px;
 	font-weight: 500;
 	padding: 0 10px;
+}
+.custom_checkbox{
+	&.form-group{
+		padding-left: 14px;
+		@media screen and (max-width: 400px){
+			padding-left: 0;
+		}
+	}
+	[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+	  position: absolute;
+	  left: -9999px;
+	}
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+	  position: relative;
+	  padding-left: 26px;
+	  cursor: pointer;
+	  color: #909ba1;
+	  a{
+			text-decoration: underline;
+			color: #26bcf1;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		@include media-breakpoint-down(sm){
+			font-size: 14px;
+		}
+	}
+
+	/* checkbox aspect */
+	[type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before {
+	  content: '';
+	  position: absolute;
+	  left: 0; top: 0;
+	  width: 16px;
+	  height: 16px;
+	  border: 2px solid #4c4c4c;
+	  background: #fff;
+	  border-radius: 2px;
+	  @include media-breakpoint-down(sm){
+	  	width: 20px;
+	  	height: 20px;
+	  }
+	}
+	/* checked mark aspect */
+	[type="checkbox"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after {
+	  content: "\e900";
+	  position: absolute;
+	  top:4px;
+	  left: 3px;
+	  font-size: 9px;
+	  line-height: 0.8;
+	  color: #4c4c4c;
+	  transition: all .2s;
+	  font-weight: bold;
+	  font-family: 'custom_icon_font' !important;
+	  @include media-breakpoint-down(sm){
+	  	font-size: 10px;
+	  	left: 5px;
+	  	top: 5px;
+	  }
+	}
+	/* checked mark aspect changes */
+	[type="checkbox"]:not(:checked) + label:after {
+	  opacity: 0;
+	  transform: scale(0);
+	}
+	[type="checkbox"]:checked + label:after {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	/* disabled checkbox */
+	[type="checkbox"]:disabled:not(:checked) + label:before,
+	[type="checkbox"]:disabled:checked + label:before {
+	  box-shadow: none;
+	  border-color: #bbb;
+	  background-color: #ddd;
+	}
+	[type="checkbox"]:disabled:checked + label:after {
+	  color: #999;
+	}
+	[type="checkbox"]:disabled + label {
+	  color: #aaa;
+	}
 }
