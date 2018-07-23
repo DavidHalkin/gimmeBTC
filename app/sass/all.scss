@@ -546,6 +546,13 @@ span.data{
 			}
 		}
 	}
+	h4{
+		margin: 0;
+		font-size: 14px;
+		font-weight: bold;
+		color: #424951;
+		padding-bottom: 18px;
+	}
 	@include media-breakpoint-down(sm) {
 		max-width: none;
 		.btn{
@@ -554,6 +561,10 @@ span.data{
 		}
 		p{
 			font-size: 14px;
+		}
+		h4{
+			font-size: 18px;
+			padding-left: 15px;
 		}
 	}
 	@media screen and (max-width: 400px){
@@ -743,4 +754,27 @@ span.data{
 }
 .func_block_t_padding_2{
 	padding-top: 73px;
+}
+.bb_1{
+	border-bottom: 1px solid #ccd2dc;
+}
+.contact_info{
+	padding-top: 30px;
+	position: relative;
+	margin: 0 -15px;
+	label{
+		padding: 0 15px !important;
+	}
+	h4{
+		font-size: 12px;
+		padding: 0 15px;
+		font-weight: normal;
+		margin: 0;
+		color: #909ba1;
+	}
+	@include media-breakpoint-down(sm){
+		h4,label{
+			font-size: 18px;
+		}
+	}
 }

@@ -133,6 +133,13 @@ body {
 	font-style: italic;
 	padding-top: 8px;
 	font-size: 12px;
+	a{
+		color: #26bcf1;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 	i{
 		font-style: italic;
 	}
@@ -427,5 +434,107 @@ span.help_text{
 	}
 	[type="checkbox"]:disabled + label {
 	  color: #aaa;
+	}
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 42px;
+	height: 22px;
+	margin-left: 15px !important;
+	padding: 0 !important;
+	input {
+		display:none;
+		&:checked{
+			+ .slider{
+				background-color: #26bcf1;
+				&:before{
+					transform: translateX(16px);
+					@include media-breakpoint-down(sm){
+						transform: translateX(33px);
+					}
+				}
+			}
+		}
+		&:focus{
+			+ .slider{
+				box-shadow: 0 0 1px #2196F3;
+			}
+		}
+	}
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+		&:before{
+			position: absolute;
+			content: "";
+			height: 18px;
+			width: 18px;
+			left: 4px;
+			bottom: 2px;
+			background-color: white;
+			-webkit-transition: .4s;
+			transition: .4s;
+			@include media-breakpoint-down(sm){
+				width: 32px;
+				height: 32px;
+				bottom: 4px;
+			}
+		}
+		&.round{
+			border-radius: 10px;
+			@include media-breakpoint-down(sm){
+				border-radius: 18px;
+			}
+			&:before{
+				border-radius: 50%;
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		width: 74px;
+		height: 40px;
+	}
+}
+.custom_select{
+	position: relative;
+	&:after{
+		content: "\ea0c";
+		font-size: 12px;
+		 font-family: 'custom_icon_font' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		color: #424951;
+		transform:translateY(-50%) rotate(90deg);
+	}
+	select{
+		padding-left: 10px;
+		background:#fff;
+		cursor: pointer;
+		&:focus{
+			box-shadow: none;
+			border-color: #ced4da;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		select{
+			height: 40px;
+			font-size: 18px;
+		}
 	}
 }
