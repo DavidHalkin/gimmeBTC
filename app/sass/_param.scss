@@ -123,8 +123,12 @@ body {
 	color: #424951;
 	font-weight: 500;
 	@include media-breakpoint-down(sm){
-		height: 40px;
+		// height: 40px;
+		// line-height: 38px;
 		font-size: 18px;
+		line-height: 20px;
+		padding-top: 11px;
+		padding-bottom: 8px;
 	}
 }
 .help_text{
@@ -256,7 +260,7 @@ span.help_text{
 			color: #fff;
 		}
 	}
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		.btn{
 			height: 60px;
 			font-size: 18px;
