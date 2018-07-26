@@ -8,21 +8,25 @@ $(document).ready(function(){
     });
    $(".message_link_js").click(function(){
         $(".message_drop_js").toggleClass("opened");
+        $("body").addClass("overflow");
         $(this).toggleClass("active");
         return false;
     });
     $(".message_drop_close_js").click(function(){
         $(".message_drop_js").removeClass("opened");
         $(".message_link_js").removeClass("active");
+        $("body").removeClass("overflow");
         return false;
     });
     // open menubar
      $(".btn_mob_js").click(function(){
         $(".bar_menu").toggleClass("opened");
+        $("body").addClass("overflow");
         $(".menu_overlay").toggleClass("opened");
     });
       $(".menu_overlay").click(function(){
         $(".bar_menu").toggleClass("opened");
+        $("body").removeClass("overflow");
         $(".menu_overlay").toggleClass("opened");
     });
       // show etc forms

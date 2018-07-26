@@ -237,6 +237,11 @@ span.help_text{
 .holder_i_group{
 	padding-bottom: 15px;
 }
+.overflow{
+	@include media-breakpoint-down(md) {
+		overflow: hidden !important;
+	}
+}
 .box_item_wrap2{
 	padding: 0 34px 35px;
 	.btn{
@@ -255,6 +260,19 @@ span.help_text{
 		.btn{
 			height: 60px;
 			font-size: 18px;
+			&:hover{
+				opacity: .9;
+			}
+			&.btn-outline-custom_green{
+				background:#50c46f;
+				border-color: #50c46f;
+				color: #fff;
+			}
+			&.btn-outline-custom_red2{
+				background:#e25757;
+				border-color: #e25757;
+				color: #fff;
+			}
 		}
 	}
 }

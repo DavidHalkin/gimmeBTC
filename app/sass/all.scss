@@ -611,6 +611,9 @@ span.data{
 		font-weight: 500;
 		padding-top: 5px;
 		display: block;
+		@include media-breakpoint-down(sm) {
+			margin-top: 16px;
+		}
 	}
 	@include media-breakpoint-down(md){
 		font-size: 14px;
@@ -638,6 +641,7 @@ span.data{
 		@include media-breakpoint-down(sm){
 			display: flex;
 			flex-wrap:wrap;
+			h3{padding-left: 0;}
 			h3,.total_info{
 				flex: 0 0 100%;
 				max-width: 100%;

@@ -1175,13 +1175,18 @@ span.help_text i { font-style: normal; }
 
 .holder_i_group { padding-bottom: 15px; }
 
+@media (max-width: 991.98px) { .overflow { overflow: hidden !important; } }
+
 .box_item_wrap2 { padding: 0 34px 35px; }
 
 .box_item_wrap2 .btn { height: 40px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 14px; font-weight: 500; color: #4c4c4c; }
 
 .box_item_wrap2 .btn:hover { color: #fff; }
 
-@media (max-width: 767.98px) { .box_item_wrap2 .btn { height: 60px; font-size: 18px; } }
+@media (max-width: 767.98px) { .box_item_wrap2 .btn { height: 60px; font-size: 18px; }
+  .box_item_wrap2 .btn:hover { opacity: .9; }
+  .box_item_wrap2 .btn.btn-outline-custom_green { background: #50c46f; border-color: #50c46f; color: #fff; }
+  .box_item_wrap2 .btn.btn-outline-custom_red2 { background: #e25757; border-color: #e25757; color: #fff; } }
 
 .list_i { display: table; padding: 20px 0 10px 12px; margin: 0; list-style: none; }
 
@@ -1822,6 +1827,8 @@ span.data { padding: 2px 10px; -webkit-border-radius: 4px; border-radius: 4px; f
 
 .mini_info strong { color: #424951; font-weight: 500; padding-top: 5px; display: block; }
 
+@media (max-width: 767.98px) { .mini_info strong { margin-top: 16px; } }
+
 @media (max-width: 991.98px) { .mini_info { font-size: 14px; } }
 
 .col_max_w { max-width: 250px; width: 100%; text-align: right; }
@@ -1837,6 +1844,7 @@ span.data { padding: 2px 10px; -webkit-border-radius: 4px; border-radius: 4px; f
 .qr_code .txt { padding-right: 20px; }
 
 @media (max-width: 767.98px) { .qr_code .txt { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .qr_code .txt h3 { padding-left: 0; }
   .qr_code .txt h3, .qr_code .txt .total_info { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
   .qr_code .txt .total_info { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; } }
 
