@@ -124,11 +124,11 @@ body {
 	font-weight: 500;
 	@include media-breakpoint-down(sm){
 		// height: 40px;
-		// line-height: 38px;
-		font-size: 18px;
 		line-height: 20px;
-		padding-top: 11px;
-		padding-bottom: 8px;
+		font-size: 18px;
+		// line-height: 20px;
+		padding-top: 12px;
+		padding-bottom: 7px;
 	}
 }
 .help_text{

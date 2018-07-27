@@ -21,7 +21,7 @@ $(document).ready(function(){
     // open menubar
      $(".btn_mob_js").click(function(){
         $(".bar_menu").toggleClass("opened");
-        $("body").addClass("overflow");
+        $("body").toggleClass("overflow");
         $(".menu_overlay").toggleClass("opened");
     });
       $(".menu_overlay").click(function(){

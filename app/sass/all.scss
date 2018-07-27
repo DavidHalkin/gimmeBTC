@@ -714,12 +714,14 @@ span.data{
 	label{
 		text-align: right;
 		color: #909ba1;
-		background: gray;
+		background: blue;
 	}
-	.col-md-8{background: pink;}
+	.col-md-8{background: red;}
 	input{
 		color: #424951;
 		font-weight: 500;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 	@include media-breakpoint-down(sm){
 		label{

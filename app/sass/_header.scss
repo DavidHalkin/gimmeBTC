@@ -135,7 +135,7 @@
 		background: red;
 		position: fixed;
 		top: 80px;
-		left: -100%;
+		right: -100%;
 		height: calc(100% - 80px);
 		min-height: calc(100% - 80px);
 		overflow: auto;
@@ -146,7 +146,7 @@
 		flex-wrap:wrap !important;
 		align-content:flex-start !important;
 		&.opened{
-			left: 0;
+			right: 0;
 		}
 		@media screen and (max-width: 400px) {
 			width: 280px;
