@@ -9,7 +9,7 @@ html { font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 100
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { display: block; }
 
-body { margin: 0; font-family: "Arial"; font-size: 0.75rem; font-weight: 400; line-height: 1.5; color: #000; text-align: left; background-color: #fff; }
+body { margin: 0; font-family: "HelveticaNeueCyr"; font-size: 0.75rem; font-weight: 400; line-height: 1.5; color: #000; text-align: left; background-color: #fff; }
 
 [tabindex="-1"]:focus { outline: 0 !important; }
 
@@ -2056,7 +2056,7 @@ button.close { padding: 0; background-color: transparent; border: 0; -webkit-app
 
 @media (min-width: 992px) { .modal-lg { max-width: 800px; } }
 
-.tooltip { position: absolute; z-index: 1070; display: block; margin: 0; font-family: "Arial"; font-style: normal; font-weight: 400; line-height: 1.5; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; letter-spacing: normal; word-break: normal; word-spacing: normal; white-space: normal; line-break: auto; font-size: 0.65625rem; word-wrap: break-word; opacity: 0; }
+.tooltip { position: absolute; z-index: 1070; display: block; margin: 0; font-family: "HelveticaNeueCyr"; font-style: normal; font-weight: 400; line-height: 1.5; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; letter-spacing: normal; word-break: normal; word-spacing: normal; white-space: normal; line-break: auto; font-size: 0.65625rem; word-wrap: break-word; opacity: 0; }
 
 .tooltip.show { opacity: 0.9; }
 
@@ -2090,7 +2090,7 @@ button.close { padding: 0; background-color: transparent; border: 0; -webkit-app
 
 .tooltip-inner { max-width: 200px; padding: 0.25rem 0.5rem; color: #fff; text-align: center; background-color: #000; -webkit-border-radius: 0.25rem; border-radius: 0.25rem; }
 
-.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: block; max-width: 276px; font-family: "Arial"; font-style: normal; font-weight: 400; line-height: 1.5; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; letter-spacing: normal; word-break: normal; word-spacing: normal; white-space: normal; line-break: auto; font-size: 0.65625rem; word-wrap: break-word; background-color: #fff; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 0.3rem; border-radius: 0.3rem; }
+.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: block; max-width: 276px; font-family: "HelveticaNeueCyr"; font-style: normal; font-weight: 400; line-height: 1.5; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; letter-spacing: normal; word-break: normal; word-spacing: normal; white-space: normal; line-break: auto; font-size: 0.65625rem; word-wrap: break-word; background-color: #fff; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 0.3rem; border-radius: 0.3rem; }
 
 .popover .arrow { position: absolute; display: block; width: 1rem; height: 0.5rem; margin: 0 0.3rem; }
 
