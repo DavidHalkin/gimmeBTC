@@ -123,12 +123,11 @@ body {
 	color: #424951;
 	font-weight: 500;
 	@include media-breakpoint-down(sm){
-		// height: 40px;
-		line-height: 20px;
-		font-size: 18px;
+		height: 40px;
 		// line-height: 20px;
-		padding-top: 12px;
-		padding-bottom: 7px;
+		font-size: 18px;
+		// padding-top: 12px;
+		// padding-bottom: 7px;
 	}
 }
 .help_text{
