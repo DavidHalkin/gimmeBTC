@@ -319,6 +319,12 @@
 		padding: 25px 30px 30px;
 		width: 100%;
 		justify-content:space-between !important;
+		.balance_list{
+			order:0;
+		}
+		a{
+			order:2;
+		}
 		span{
 			display: none !important;
 		}

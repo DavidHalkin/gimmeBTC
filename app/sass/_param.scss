@@ -109,12 +109,17 @@ body {
 	}
 	.dropdown-menu{
 		padding: 0;
+		top: 100% !important;
 		margin: 0;
+		transform: none !important;
 		border-radius: 0;
 		border: 1px solid #ededed;
 		width: 100%;
 		border-top: 0;
 		border-bottom: 0;
+		max-height: 300px;
+		overflow: auto;
+		z-index: 199;
 	}
 }
 .form-control{
