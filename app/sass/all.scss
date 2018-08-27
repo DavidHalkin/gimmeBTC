@@ -12,7 +12,12 @@
 	padding: 30px 10px 0;
 	max-width: 1140px;
 	margin: 0 auto;
-	overflow: hidden;
+	// overflow: hidden;
+	&:after,&:before{
+		clear: both;
+		content: '';
+		display: table;
+	}
 }
 .box_item_wrap{
 	padding: 0 30px;

@@ -1588,7 +1588,9 @@ span.help_text i { font-style: normal; }
 
 @media screen and (max-width: 400px) { .log_in_buttons a { padding: 5px 10px; } }
 
-.main { padding: 30px 10px 0; max-width: 1140px; margin: 0 auto; overflow: hidden; }
+.main { padding: 30px 10px 0; max-width: 1140px; margin: 0 auto; }
+
+.main:after, .main:before { clear: both; content: ''; display: table; }
 
 .box_item_wrap { padding: 0 30px; }
 
