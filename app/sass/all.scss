@@ -789,3 +789,12 @@ span.data{
 		}
 	}
 }
+// fix ie11 bug
+.func_block {
+	.form-group_custom{
+		width: 100%;
+		.r_part.col_max_w{
+			width: inherit;
+		}
+	}	
+}

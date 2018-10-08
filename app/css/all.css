@@ -1917,4 +1917,8 @@ span.data { padding: 2px 10px; -webkit-border-radius: 4px; border-radius: 4px; f
 
 @media (max-width: 767.98px) { .contact_info h4, .contact_info label { font-size: 18px; } }
 
+.func_block .form-group_custom { width: 100%; }
+
+.func_block .form-group_custom .r_part.col_max_w { width: inherit; }
+
 /*# sourceMappingURL=all.css.map */
